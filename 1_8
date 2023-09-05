@@ -1,0 +1,6 @@
+/* урок 1 задание 8 измененить тип колонки */
+select name,
+price,
+price::varchar as price_char
+from products
+order by name
