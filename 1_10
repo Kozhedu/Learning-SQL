@@ -1,0 +1,4 @@
+/* урок 1 задание 10 работа с датой */
+select courier_id, DATE_PART('year', birth_date) as birth_year
+from couriers
+order by birth_year Desc, courier_id
