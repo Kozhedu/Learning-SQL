@@ -1,0 +1,6 @@
+/* урок 1 задание 4 
+Определение 5 самых дорогих товаров */
+select name, price 
+from products
+order by price desc
+limit 5
