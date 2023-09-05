@@ -1,0 +1,8 @@
+/* урок 1 задание 7 
+реобразуйте наименования товаров в таблице products так, 
+чтобы от названий осталось только первое слово, записанное в верхнем регистре */
+select name,
+UPPER(SPLIT_PART(name,' ',1)) as first_word,
+price 
+from products
+order by name
