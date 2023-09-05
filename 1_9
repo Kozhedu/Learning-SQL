@@ -1,0 +1,4 @@
+/* урок 1 задание 9 конкатинация */
+select CONCAT('Заказ № ', order_id, ' создан ', creation_time::date) as order_info
+from orders
+limit 200
