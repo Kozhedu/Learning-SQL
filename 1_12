@@ -1,0 +1,4 @@
+/* урок 1 задание 12*/
+SELECT product_id, name, price as old_price, price*1.05 as new_priсe
+from products
+order by new_priсe desc, product_id
