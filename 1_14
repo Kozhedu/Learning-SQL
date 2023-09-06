@@ -1,0 +1,3 @@
+/* урок 1 задание 14 налог */
+SELECT product_id, name, price, round(price/1.2*0.02, 2) as tax, (price - round(price/1.2*0.02, 2)) as price_before_tax
+FROM products
