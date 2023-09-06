@@ -1,0 +1,4 @@
+/* урок 1 задание 11 заполенение пропусков */
+SELECT courier_id, COALESCE(CAST(DATE_PART('year', birth_date)as text), 'unknown') as birth_year
+from couriers
+order by birth_year Desc, courier_id
