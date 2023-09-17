@@ -1,0 +1,17 @@
+/* урок 2 задание 5*/
+SELECT product_id, name
+FROM products
+where SPLIT_PART(name, ' ', 1) = 'чай' or LENGTH(name) = 5
+
+
+/* урок 2 задание 6 - LIKE*/
+SELECT product_id, name
+FROM products
+WHERE name LIKE '%чай%'
+order by product_id
+
+/* урок 2 задание 7*/
+SELECT product_id, name
+FROM products
+WHERE name LIKE 'с%' AND LENGTH(name) = LENGTH(REPLACE(name, ' ', ''))
+order by product_id
